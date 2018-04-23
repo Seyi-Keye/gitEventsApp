@@ -1,0 +1,11 @@
+exports[`Avatar component renders succesfully 1`] = `
+<img
+  alt="dafault avatar"
+  src="http://svgur.com/i/65U.svg" />
+`;
+
+exports[`Avatar component renders succesfully with props 1`] = `
+<img
+  alt="user avatar"
+  src={undefined} />
+`;

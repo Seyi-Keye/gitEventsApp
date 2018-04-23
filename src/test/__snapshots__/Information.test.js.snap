@@ -1,0 +1,12 @@
+exports[`Information component renders succesfully with props 1`] = `
+<div
+  style={
+    Object {
+      "color": "white",
+      "marginTop": "20px",
+      "padding": "10px",
+    }
+  }>
+  testType created on Mon Dec 17 2018 03:24:00 GMT+0100 by Aromokeye
+</div>
+`;
