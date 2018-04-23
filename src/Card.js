@@ -31,7 +31,6 @@ class Card extends Component {
             border: "5px solid white",
             background: "grey",
             width: "70%",
-            // boxSizing: "border-box",
             margin: "auto",
             padding: "10px",
             height: "70px"

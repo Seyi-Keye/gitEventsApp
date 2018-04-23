@@ -32,7 +32,6 @@ describe("Information component", () => {
 
   it("renders with props", () => {
     const testInstace = wrapper.root;
-    console.log(testInstace.props.data);
     expect(testInstace.props.data).toEqual(testProps.data);
   });
 });
