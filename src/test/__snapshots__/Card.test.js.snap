@@ -1,0 +1,17 @@
+exports[`Card component renders succesfully 1`] = `
+<div>
+  
+  <p>
+     No results 
+  </p>
+</div>
+`;
+
+exports[`Card component renders succesfully with props 1`] = `
+<div>
+  
+  <p>
+     No results 
+  </p>
+</div>
+`;
