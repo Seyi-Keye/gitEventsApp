@@ -7,8 +7,7 @@ class Card extends Component {
     super(props);
     this.state = {
       data: [],
-      error: "",
-      username: this.props.username
+      error: ""
     };
   }
 
@@ -17,8 +16,10 @@ class Card extends Component {
     this.fetchEventPayload(username);
   }
 
-  componentWillReceiveProps(nextProps) {
-    this.fetchEventPayload(nextProps.username);
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (prevProps.username !== this.props.username) {
+      this.fetchEventPayload(this.props.username);
+    }
   }
 
   handleDisplay = data => {

@@ -4,8 +4,7 @@ import renderer from "react-test-renderer";
 
 const initialState = {
   data: [],
-  error: "",
-  username: undefined
+  error: ""
 };
 
 describe("Card component", () => {
@@ -35,7 +34,6 @@ describe("Card component", () => {
   });
 
   it("renders with props", () => {
-    console.log(testInstance);
     expect(testInstance.state).toEqual({
       data: [],
       error: "",
@@ -44,36 +42,37 @@ describe("Card component", () => {
   });
 });
 
-fdescribe("Card functionalities", () => {
-  let fetchEventPayload = false;
-  const node = {
-    createNodeMock: () => {
-      return {
-        handleFormSubmit: () => {
-          focused = true;
-        }
-      };
-    }
-  };
+// fdescribe("Card functionalities", () => {
+//   let fetchEventPayload = false;
+//   // const node = {
+//   //   createNodeMock: () => {
+//   //     return {
+//   //       handleFormSubmit: () => {
+//   //         focused = true;
+//   //       }
+//   //     };
+//   //   }
+//   // };
 
-  const stub = () => true;
+//   const stub = () => true;
 
-  const componentRoot = renderer.create(<Card />, node).root;
+//   const componentRoot = renderer.create(<Card />).root;
+//   // , node).root;
 
-  const componentInstance = componentRoot.instance;
-  componentInstance.setState({ username: "aromokeye" });
-  const fetchEventPayloadSpy = jest.spyOn(
-    componentInstance.prototype,
-    "fetchEventPayload"
-  );
+//   const componentInstance = componentRoot.instance;
+//   componentInstance.setState({ username: "aromokeye" });
+//   const fetchEventPayloadSpy = jest.spyOn(
+//     componentInstance.prototype,
+//     "fetchEventPayload"
+//   );
 
-  console.log(
-    "button",
-    fetchEventPayloadSpy,
-    "========",
-    componentInstance.fetchEventPayload
-  );
-  it("calls fetchEventPayload", () => {
-    expect(fetchEventPayloadSpy).toHaveBeenCalled();
-  });
-});
+//   console.log(
+//     "button",
+//     fetchEventPayloadSpy,
+//     "========",
+//     componentInstance.fetchEventPayload
+//   );
+//   it("calls fetchEventPayload", () => {
+//     expect(fetchEventPayloadSpy).toHaveBeenCalled();
+//   });
+// });
