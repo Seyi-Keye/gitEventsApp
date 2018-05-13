@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Information component renders succesfully 1`] = `
 <div
   style={
@@ -7,7 +9,7 @@ exports[`Information component renders succesfully 1`] = `
       "padding": "10px",
     }
   }>
-  n/a created on Sun May 06 2018 15:11:59 GMT+0100 by n/a
+  n/a created on Sun May 13 2018 15:45:02 GMT+0100 by n/a
 </div>
 `;
 

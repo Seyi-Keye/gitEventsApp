@@ -5,8 +5,7 @@
   "dependencies": {
     "moment": "2.22.1",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-scripts": "0.9.x"
+    "react-dom": "^16.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -17,6 +16,11 @@
   "devDependencies": {
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.3",
+    "react-scripts": "^1.1.4",
     "react-test-renderer": "^16.3.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }

@@ -34,7 +34,7 @@ describe("SearchTool component", () => {
   });
 });
 
-describe.only("SearchTool functionalities", () => {
+describe("SearchTool functionalities", () => {
   // let handleFormSubmit = false;
   // const node = {
   //   createNodeMock: element => {
@@ -69,18 +69,34 @@ describe.only("SearchTool functionalities", () => {
   //   });
   // });
 
-  it("simulate events", () => {
+  fit("simulate click events", () => {
     const mockFunction = jest.fn();
-    // const handleSearchTextChangeSpy = jest.spyOn(
-    //   SearchTool.prototype,
-    //   "handleSearchTextChange"
-    // );
+    const handleSearchTextChangeSpy = jest.spyOn(
+      SearchTool.prototype,
+      "handleSearchTextChange"
+    );
     const wrapper = mount(<SearchTool handleSearch={mockFunction} />);
     const button = wrapper.find("button").first();
     button.simulate("click");
     expect(mockFunction.mock.calls.length).toBe(1);
     // wrapper[handleSearchTextChange] = jest.fn(() => true);
-    // expect(handleSearchTextChangeSpy).toHaveBeenCalled();
+    expect(handleSearchTextChangeSpy).toHaveBeenCalled();
     // expect(wrapper.state().value).toBe("typing");
+  });
+  it("simulate change events", () => {
+    const mockFunction = jest.fn();
+    // const handleSearchTextChangeSpy = jest.spyOn(
+    //   SearchTool.prototype,
+    //   "handleSearchTextChange"
+    // );
+    const wrapper = mount(<SearchTool />);
+    const input = wrapper.find("input").first();
+    input.simulate("change", {
+      target: { value: "seyi" }
+    });
+    // expect(mockFunction.mock.calls.length).toBe(1);
+    // wrapper[handleSearchTextChange] = jest.fn(() => true);
+    // expect(handleSearchTextChangeSpy).toHaveBeenCalled();
+    expect(wrapper.state("username")).toBe("seyi");
   });
 });
