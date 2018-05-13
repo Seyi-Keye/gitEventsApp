@@ -1,0 +1,31 @@
+exports[`GridView component renders succesfully 1`] = `
+<div
+  style={
+    Object {
+      "margin": "10px",
+    }
+  }>
+  <div>
+    
+    <p>
+       No results 
+    </p>
+  </div>
+</div>
+`;
+
+exports[`GridView component renders succesfully with props 1`] = `
+<div
+  style={
+    Object {
+      "margin": "10px",
+    }
+  }>
+  <div>
+    
+    <p>
+       No results 
+    </p>
+  </div>
+</div>
+`;

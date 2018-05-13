@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchTool component renders succesfully 1`] = `
+<div
+  style={
+    Object {
+      "height": "100%",
+      "margin": "auto",
+      "width": "100%",
+    }
+  }>
+  <form
+    onSubmit={[Function]}>
+    <input
+      name="githubUsername"
+      onChange={[Function]}
+      placeholder="Type github username"
+      style={
+        Object {
+          "height": "30px",
+          "width": "20%",
+        }
+      }
+      type="text"
+      value="" />
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "blue",
+          "color": "white",
+          "height": "30px",
+          "width": "10%",
+        }
+      }
+      type="button">
+       
+      Search Github Events
+    </button>
+  </form>
+</div>
+`;
+
+exports[`SearchTool component renders succesfully with props 1`] = `
+<div
+  style={
+    Object {
+      "height": "100%",
+      "margin": "auto",
+      "width": "100%",
+    }
+  }>
+  <form
+    onSubmit={[Function]}>
+    <input
+      name="githubUsername"
+      onChange={[Function]}
+      placeholder="Type github username"
+      style={
+        Object {
+          "height": "30px",
+          "width": "20%",
+        }
+      }
+      type="text"
+      value="aromokeye" />
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "blue",
+          "color": "white",
+          "height": "30px",
+          "width": "10%",
+        }
+      }
+      type="button">
+       
+      Search Github Events
+    </button>
+  </form>
+</div>
+`;
